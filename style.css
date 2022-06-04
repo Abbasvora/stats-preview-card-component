@@ -18,7 +18,7 @@
 
 body{
     font-family: var(--font-main);
-    font-size: 1rem;
+    font-size: 0.9rem;
     min-height: 100vh;
     background-color: var(--dark-blue);
     color: var(--color-white-100);
@@ -73,7 +73,7 @@ h1{
 
 .description{
     margin-bottom: 1.8rem;
-    line-height: 2;
+    line-height: 1.7;
     padding: 0 2.5em;
 }
 
@@ -96,7 +96,63 @@ h1{
     text-transform: uppercase;
 }
 
+@media (min-width: 910px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 0;
+        text-align: left;
+        width: min(70%, 90vw);
+        margin: 0 auto;
+    }
+    .image{
+        margin-bottom: 0;
+        flex-basis: 100%;
+    }
+
+    .text-content{
+        flex-basis: 100%;
+        padding: 4rem 3rem;
+    }
+
+    .container img{
+        height: 100%;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .image span{
+        border-radius: 0 1rem 1rem 0;
+    }
+    .stats{
+        display: inline-block;
+        margin-right: 2.6rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .stats:last-child{
+        margin-right: 0;
+    }
+
+    .description{
+        padding: 0;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
 .attribution {
+    
     font-size: 11px;
     text-align: center;
     margin-bottom: 0.5em;
