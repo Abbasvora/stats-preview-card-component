@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-blue: hsl(233, 47%, 7%);
+    --desatureted-blue: hsl(244, 38%, 16%);
+    --color-accent: hsl(277, 64%, 61%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-100: hsla(0, 0%, 100%, 0.75);
+    --color-white-200: hsla(0, 0%, 100%, 0.6);
+
+    --font-main: 'Inter', sans-serif;
+    --font-accent: 'Lexend Deca', sans-serif;
+}
+
+body{
+    font-family: var(--font-main);
+    font-size: 1rem;
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+    color: var(--color-white-100);
+}
+
+.container{
+    margin: 5rem 1.7rem;
+    padding-bottom: 2.5em;
+    text-align: center;
+    border-radius: 1em;
+    background-color: var(--desatureted-blue);
+    
+}
+
+.image{
+    position: relative;
+    margin-bottom: 2.7rem;
+}
+
+.container img{
+    width: 100%;
+    display: block;
+    border-radius: 1em 1em 0 0;
+}
+
+.image span{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    opacity: .5;
+    background-color: var(--color-accent);
+    border-radius: 1em 1em 0 0;
+}
+
+h1{
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+}
+
+.insights{
+    color: var(--color-accent);
+}
+
+.text-content{
+    padding: 1rem;
+}
+
+.description{
+    margin-bottom: 1.8rem;
+    line-height: 2;
+    padding: 0 2.5em;
+}
+
+.stats{
+    
+    margin-bottom: 1.5rem;
+}
+
+.number{
+    color: var(--color-white);
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.label{
+    color: var(--color-white-200);
+    font-size: 0.8rem;
+    font-family: var(--font-accent);
+    font-weight: 300;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
